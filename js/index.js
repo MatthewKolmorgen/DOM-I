@@ -1,9 +1,8 @@
 const siteContent = {
   "nav": {
     "nav-item-1": "Services",
-    
-    "nav-item-2": "Product",
 
+    "nav-item-2": "Product",
 
     "nav-item-3": "Vision",
 
@@ -70,7 +69,11 @@ navItem[3].textContent = siteContent["nav"]["nav-item-4"];
 navItem[4].textContent = siteContent["nav"]["nav-item-5"];
 navItem[5].textContent = siteContent["nav"]["nav-item-6"];
 
+const ctaButton = document.querySelector(".cta-text button");
+ctaButton.textContent = siteContent['cta']['button']
 
+const ctaHeader = document.querySelector(".cta-text h1");
+ctaHeader.textContent = siteContent['cta']['h1']
 
-const middleimg = document.querySelector(".main-content img");
-middleimg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+const mainImg = document.querySelector(".main-content img");
+mainImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
