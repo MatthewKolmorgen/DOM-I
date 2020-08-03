@@ -145,8 +145,30 @@ contactUsParagraph[1].textContent = siteContent["contact"]["phone"];
 contactUsParagraph[2].textContent = siteContent["contact"]["email"];
 
 
-// ********* Footer*********
+// ********* Footer *********
 
-const gICopyright =  document.querySelector("footer p")
-gICopyright.textContent = siteContent["footer"]["copyright"]
 
+const gICopyright =  document.querySelector("footer p");
+gICopyright.textContent = siteContent["footer"]["copyright"];
+
+
+// ********* Change Nav Color *********
+
+navItem.forEach((link) => {
+  link.style.color = "green";
+});
+
+
+// ********* Utilize `.appendChild()` and `.prepend()` *********
+
+
+const navLink = document.querySelector(".container nav");
+const newNavLink = document.createElement("a");
+newNavLink.textContent = "There";
+newNavLink.href = "#"
+navLink.appendChild(newNavLink);
+
+const anotherLink = document.createElement("a");
+anotherLink.textContent = "Hi";
+anotherLink.href = "#";
+navLink.prepend(anotherLink)
