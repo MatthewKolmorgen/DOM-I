@@ -14,6 +14,7 @@ const siteContent = {
 
     "img-src": "img/logo.png"
   },
+
   "cta": {
     "h1": "DOM Is Awesome",
 
@@ -21,6 +22,7 @@ const siteContent = {
 
     "img-src": "img/header-img.png"
   },
+
   "main-content": {
 
     "features-h4":"Features",
@@ -70,10 +72,15 @@ navItem[4].textContent = siteContent["nav"]["nav-item-5"];
 navItem[5].textContent = siteContent["nav"]["nav-item-6"];
 
 const ctaButton = document.querySelector(".cta-text button");
-ctaButton.textContent = siteContent['cta']['button']
+ctaButton.textContent = siteContent["cta"]["button"]
 
 const ctaHeader = document.querySelector(".cta-text h1");
-ctaHeader.textContent = siteContent['cta']['h1']
+ctaHeader.textContent = siteContent["cta"]["h1"]
+
+const ctaImage = document.querySelector(".cta img");
+ctaImage.setAttribute("src", siteContent["cta"]["img-src"])
 
 const mainImg = document.querySelector(".main-content img");
 mainImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+const mainFeatures = document.querySelector("")
