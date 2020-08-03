@@ -145,5 +145,8 @@ contactUsParagraph[1].textContent = siteContent["contact"]["phone"];
 contactUsParagraph[2].textContent = siteContent["contact"]["email"];
 
 
-// ********* Footer *********
+// ********* Footer*********
+
+const gICopyright =  document.querySelector("footer p")
+gICopyright.textContent = siteContent["footer"]["copyright"]
 
