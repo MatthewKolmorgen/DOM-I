@@ -134,3 +134,16 @@ visionContent.textContent = siteContent["main-content"]["about-content"];
 
 
 // ********* Contact *********
+
+
+const contactUs = document.querySelector(".contact h4");
+contactUs.textContent = siteContent["contact"]["contact-h4"];
+
+const contactUsParagraph = document.querySelectorAll(".contact p");
+contactUsParagraph[0].textContent = siteContent["contact"]["address"];
+contactUsParagraph[1].textContent = siteContent["contact"]["phone"];
+contactUsParagraph[2].textContent = siteContent["contact"]["email"];
+
+
+// ********* Footer *********
+
