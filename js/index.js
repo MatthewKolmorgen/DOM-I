@@ -68,6 +68,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 
 const navItem = document.querySelectorAll("nav a");
+
 navItem[0].textContent = siteContent["nav"]["nav-item-1"];
 navItem[1].textContent = siteContent["nav"]["nav-item-2"];
 navItem[2].textContent = siteContent["nav"]["nav-item-3"];
@@ -171,4 +172,4 @@ navLink.appendChild(newNavLink);
 const anotherLink = document.createElement("a");
 anotherLink.textContent = "Hi";
 anotherLink.href = "#";
-navLink.prepend(anotherLink)
+navLink.prepend(anotherLink);
